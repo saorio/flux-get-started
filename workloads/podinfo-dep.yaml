@@ -47,7 +47,7 @@ spec:
         - --random-error=false
         env:
         - name: PODINFO_UI_COLOR
-          value: blue
+          value: red
         livenessProbe:
           httpGet:
             path: /healthz
@@ -58,7 +58,7 @@ spec:
             port: 9898
         resources:
           limits:
-            cpu: 1000m
+            cpu: 800m
             memory: 128Mi
           requests:
             cpu: 10m
